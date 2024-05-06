@@ -1,4 +1,4 @@
-name: TestAction
+name: Output Something
 on:
   workflow_dispatch
 
