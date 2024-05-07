@@ -10,7 +10,8 @@ jobs:
       -  name: Checkout
          uses: actions/checkout@v4.1.5
 
-      -  name: ExecuteCommand
+      -  id: ExecuteCommand
+         name: ExecuteCommand
          run: |
           echo "REPORT_DATE=Test" >> $GITHUB_OUTPUT
 
