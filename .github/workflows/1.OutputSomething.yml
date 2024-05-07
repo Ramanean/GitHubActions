@@ -10,11 +10,11 @@ jobs:
       -  name: Checkout
          uses: actions/checkout@v4.1.5
 
-      -  name: Execute Command
+      -  name: ExecuteCommand
          run: echo "REPORT_DATE=$(TZ=':Asia/Kolkata' date '+%Y-%m-%d %T')" >> $GITHUB_OUTPUT
 
       -  name:  Display Date
-         run: echo "$GITHUB_OUTPUT"
+         run: echo "{{steps.executecommand.outputs.REPORT_DATE}}"
       
 
 
