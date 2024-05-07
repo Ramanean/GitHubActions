@@ -14,7 +14,7 @@ jobs:
       - id: set-value
         name: Generate a value
         run: |
-          value=$((RANDOM))
+          value="test"
           echo "new-key=$value" >> "$GITHUB_OUTPUT"
 
       - name: Access it
