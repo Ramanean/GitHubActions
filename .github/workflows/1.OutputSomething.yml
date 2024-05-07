@@ -10,16 +10,15 @@ jobs:
       -  name: Checkout
          uses: actions/checkout@v4.1.5
 
-      -  id: ExecuteCommand
-         name: ExecuteCommand
-         run: |
-          echo "REPORT_DATE=Test" >> $GITHUB_OUTPUT
 
-      -  name:  Display Date
-         run: |
-          echo "{{ steps.executecommand.outputs.REPORT_DATE }}"
-      
+      - id: set-value
+        name: Generate a value
+        run: |
+          value=$((RANDOM))
+          echo "new-key=$value" >> "$GITHUB_OUTPUT"
 
-
+      - name: Access it
+        run: |
+          echo "the secret number is ${{ steps.sets-value.outputs.new-key }}"
           
   
