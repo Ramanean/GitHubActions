@@ -1,6 +1,7 @@
 name: SimpleWorkflow
 run-name: ${{ github.actor }} is learning GitHub Actions
-on:push
+on:
+  workflow_dispatch
 jobs:
   job1:
     runs-on: ubuntu-latest
