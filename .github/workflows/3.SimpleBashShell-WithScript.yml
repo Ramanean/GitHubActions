@@ -6,7 +6,9 @@ on:
 jobs:
   job:
     runs-on: ubuntu-latest
-    
+    defaults:
+      run:
+        working-directory: ./Scripts/Shell
     steps:
       
       - name: Checkout
@@ -25,7 +27,7 @@ jobs:
         run: dir
 
       - name: Shell Execution
-        run: bash /scripts/shell/test.sh
+        run: bash test.sh
 
       - name: Shell Execution
         run: ./test.sh
