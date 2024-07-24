@@ -25,5 +25,5 @@ jobs:
         run: dir
 
       - name: Shell Execution
-        run: ./Scripts/Shell/test.sh
+        run: ./home/runner/work/GitHubActions/GitHubActions/Scripts/Shell/test.sh
             
