@@ -19,15 +19,14 @@ jobs:
         run: "echo Shan"
 
       - name: current directory
-        run: 
-           pwd
-           dir
-           cd Scripts
-           cd Shell
+        run: pwd
 
       - name: listing directory
         run: dir
 
       - name: Shell Execution
-        run: ./home/runner/work/GitHubActions/GitHubActions/Scripts/Shell/test.sh
+        run: bash test.sh
+
+      - name: Shell Execution
+        run: ./test.sh
             
