@@ -19,7 +19,11 @@ jobs:
         run: "echo Shan"
 
       - name: current directory
-        run: pwd
+        run: 
+           pwd
+           dir
+           cd Scripts
+           cd Shell
 
       - name: listing directory
         run: dir
