@@ -18,6 +18,9 @@ jobs:
       - name: Shell Execution
         run: "echo Shan"
 
+      - name: Make the script files executable
+        run: chmod +x /Scripts/Shell/test.sh
+
       - name: Shell Execution
         run: ./Scripts/Shell/test.sh
             
