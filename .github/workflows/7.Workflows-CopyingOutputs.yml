@@ -22,7 +22,10 @@ jobs:
       - name: Shell Execution
         run: |
           expr 1 + 1 > output.log
-          
+          dir
+          pwd
+          ls -l -h
+
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
