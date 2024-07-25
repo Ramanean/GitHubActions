@@ -1,4 +1,4 @@
-name: 3.SimpleBashShell-WithScript
+name: 4.SimpleBashShell-WithMultipleScripts
 
 on:
   workflow_dispatch
