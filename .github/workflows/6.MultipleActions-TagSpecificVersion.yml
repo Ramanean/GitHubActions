@@ -1,0 +1,42 @@
+name: 6.MultipleActions-TagSpecificVersion
+
+on:
+  workflow_dispatch
+  
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Scripts/Shell
+    steps:
+      
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+        with:      
+          repository: ${{ github.repository }}
+
+
+      - name: Shell Execution
+        run: "echo Shan"
+
+      - name: current directory
+        run: pwd
+
+      - name: listing directory
+        run: dir
+
+      - name: Shell Execution
+        run: bash test.sh
+
+      - name: Shell Execution
+        run: bash test.sh
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4.2.1
+        with:
+          # The Java version to set up. Takes a whole or semver Java version. See examples of supported syntax in README file
+          java-version: 17
+          distribution: microsoft
+
+                
