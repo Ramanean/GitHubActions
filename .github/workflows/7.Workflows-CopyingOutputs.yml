@@ -26,8 +26,7 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
-          # Artifact name
-          name: outputlog
+          name: output-log
           path: output.log
 
   Download-Artifact:
@@ -46,5 +45,5 @@ jobs:
         uses: actions/download-artifact@v4.1.8
         with:
           # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
-          name: outputlog
+          name: output-log
                 
