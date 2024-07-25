@@ -1,0 +1,34 @@
+name: 3.SimpleBashShell-WithScript
+
+on:
+  workflow_dispatch
+  
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Scripts/Shell
+    steps:
+      
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+        with:      
+          repository: ${{ github.repository }}
+
+
+      - name: Shell Execution
+        run: "echo Shan"
+
+      - name: current directory
+        run: pwd
+
+      - name: listing directory
+        run: dir
+
+      - name: Shell Execution
+        run: bash test.sh
+
+      - name: Shell Execution
+        run: bash test2.sh
+            
