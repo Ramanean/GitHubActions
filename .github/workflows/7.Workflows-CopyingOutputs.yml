@@ -1,0 +1,49 @@
+name: 6.MultipleActions-TagSpecificVersion
+
+on:
+  workflow_dispatch
+  
+jobs:
+  Upload-Artifact:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Scripts/Shell
+    steps:
+      
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+        with:      
+          repository: ${{ github.repository }}
+
+      - name: Shell Execution
+        run: bash test.sh
+
+      - name: Shell Execution
+        run: test > output.log
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.4
+        with:
+          # Artifact name
+          name: outputlog
+          path: output.log
+
+  Download-Artifact:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Scripts/Shell
+    steps:
+      
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+        with:      
+          repository: ${{ github.repository }}
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
+          name: outputlog
+                
