@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v4.3.4
         with:
           name: output-log
-          path: output.log
+          path: /home/runner/work/GitHubActions/GitHubActions/Scripts/Shell/output.log
 
   Download-Artifact:
     runs-on: ubuntu-latest
