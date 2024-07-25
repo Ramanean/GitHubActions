@@ -1,4 +1,4 @@
-name: 6.MultipleActions-TagSpecificVersion
+name: 7.Workflows-CopyingOutputs
 
 on:
   workflow_dispatch
