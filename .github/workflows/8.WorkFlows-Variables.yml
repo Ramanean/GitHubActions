@@ -17,7 +17,7 @@ jobs:
               repository: ${{ github.repository }} 
 
           - name: Print GitHub Default variables
-            run: ${GITHUB_SERVER_URL}
+            run: echo ${GITHUB_SERVER_URL}
 
           - name: GitHub Repository
-            run: ${GITHUB_REPOSITORY}
+            run: echo ${GITHUB_REPOSITORY}
