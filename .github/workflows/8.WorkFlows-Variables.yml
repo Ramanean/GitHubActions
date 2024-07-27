@@ -21,3 +21,6 @@ jobs:
 
           - name: GitHub Repository
             run: echo ${GITHUB_REPOSITORY}
+
+          - name: Workflow Run url
+            run: echo $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
