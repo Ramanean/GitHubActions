@@ -71,5 +71,39 @@ jobs:
             - name: 13a.GITHUB_HEAD_REF
               run: echo $GITHUB_HEAD_REF
 
+            - name: 14.GITHUB_JOB
+              run: echo $GITHUB_JOB
+
+            - name: 15.GITHUB_OUTPUT
+              run: echo $GITHUB_OUTPUT
+
+            - name: 16.GITHUB_PATH
+              run: echo $GITHUB_PATH
+
+            - name: 17.GITHUB_REF
+              run: echo $GITHUB_REF
+
+            - name: 18.GITHUB_REF_NAME
+              run: echo $GITHUB_REF_NAME
+
+            - name: 19.GITHUB_REF_PROTECTED
+              run: echo $GITHUB_REF_PROTECTED
+
+            - name: 20.GITHUB_REF_TYPE
+              run: echo $GITHUB_REF_TYPE
+
+            - name: 21.GITHUB_REPOSITORY
+              run: echo $GITHUB_REPOSITORY
+
+            - name: 22.GITHUB_REPOSITORY_ID
+              run: echo $GITHUB_REPOSITORY_ID
+
+            - name: 23.GITHUB_REPOSITORY_OWNER
+              run: echo $GITHUB_REPOSITORY_OWNER
+
+            - name: 24.GITHUB_REPOSITORY_OWNER_ID
+              run: echo $GITHUB_REPOSITORY_OWNER_ID
+
+
             
     
