@@ -60,8 +60,8 @@ jobs:
         defaults:
           run:
             working-directory: ./Scripts/Shell
-
-          steps:
+            
+        steps:
           
             - name: Checkout
               uses: actions/checkout@v4.1.7
