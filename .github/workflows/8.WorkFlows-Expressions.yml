@@ -1,0 +1,18 @@
+name: 8.Workflows-Expressions
+
+on:
+  workflow_dispatch
+
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        defaults:
+          run:
+            working-directory: ./Scripts/Shell
+            
+          steps:         
+           
+            - name: Checkout
+              uses: actions/checkout@v4.1.7
+              with:      
+                repository: ${{ github.repository }}
