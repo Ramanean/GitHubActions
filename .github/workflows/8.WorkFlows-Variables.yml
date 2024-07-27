@@ -1,4 +1,4 @@
-name: 8.Workflows-Expressions
+name: 8.Workflows-Variables
 
 on:
   workflow_dispatch
