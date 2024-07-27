@@ -62,7 +62,12 @@ jobs:
             working-directory: ./Scripts/Shell
 
           steps:
-
+          
+            - name: Checkout
+              uses: actions/checkout@v4.1.7
+              with:      
+                repository: ${{ github.repository }} 
+                
             - name: 13a.GITHUB_HEAD_REF
               run: echo $GITHUB_HEAD_REF
 
