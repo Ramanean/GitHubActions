@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 
 jobs:
-    job1:
+    GitHub-ActionVariables:
         runs-on: ubuntu-latest
         defaults:
           run:
@@ -16,11 +16,14 @@ jobs:
             with:      
               repository: ${{ github.repository }} 
 
-          - name: Print GitHub Default variables
-            run: echo ${GITHUB_SERVER_URL}
+          - name: 1.GitHub Action
+            run: echo $GITHUB_ACTION
 
-          - name: GitHub Repository
-            run: echo ${GITHUB_REPOSITORY}
+          - name: 2.GITHUB_ACTION_PATH
+            run: echo ${GITHUB_ACTION_PATH}
+
+          - name: 3.GITHUB_ACTION_REPOSITORY
+            run: echo $(GITHUB_ACTION_REPOSITORY)
 
           - name: Workflow Run url
             run: echo $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
