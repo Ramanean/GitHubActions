@@ -6,7 +6,7 @@ on:
 env:
   Test: Shan
   Test1: Shan1
-  Test2: Shan2
+  Test2: Shan1
 
 jobs:
    CustomVariables1:      
