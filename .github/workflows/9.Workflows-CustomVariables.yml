@@ -4,10 +4,13 @@ on:
    workflow_dispatch
 
 env:
-  a1="Shan"
+  a1: Shan
 
 jobs:
   CustomVariables1:
-    steps:
-      - name: 
-        run: echo $a1;
+      
+      runs-on: ubuntu-latest
+    
+      steps:
+         - name: Test
+           run: echo $a1;
