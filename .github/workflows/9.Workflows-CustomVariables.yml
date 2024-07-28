@@ -10,13 +10,11 @@ env:
   TestExpression: ${{ if test1==test2; true }}
 
 jobs:
-  CustomVariables1:
-      
+   CustomVariables1:      
       runs-on: ubuntu-latest
-    
       steps:
          - name: Test Variable
            run: echo $Test
-
+   
          - name: Test Expression
          - run: echo $TestExpression
