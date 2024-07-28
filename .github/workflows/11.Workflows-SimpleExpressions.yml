@@ -5,6 +5,7 @@ on:
 
 env:
   TestExpression1: "Expression1"
+  TestExpression2: Expression2
 
 jobs:
   SimpleExpressions1:
@@ -12,3 +13,6 @@ jobs:
     steps:
       - name: Expression1
         run: echo ${{ env.TestExpression1 }}
+
+      - name: Expression2
+        run: echo $TestExpression2
