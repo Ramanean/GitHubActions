@@ -1,4 +1,4 @@
-name: 9.Workflows-CustomVariables
+Tname: 9.Workflows-CustomVariables
 
 on:
    workflow_dispatch
@@ -25,4 +25,4 @@ jobs:
            run: echo ${{ env.Test2 }}
 
          - name: Print Test3
-           run: echo ${{ env.Test3 }}
+           run: echo ${{ env.TEST3 }}
