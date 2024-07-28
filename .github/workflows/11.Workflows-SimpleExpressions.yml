@@ -20,3 +20,12 @@ jobs:
 
       - name: Print Expression3
         run: echo TESTEXPRESSION3
+
+
+  SimpleExpressions2:
+    runs-on: ubuntu-latest
+    env:
+      Null1: ${{ null }}
+    steps:
+      - name: Print Null
+        run: ${{ env.Null1 }}
