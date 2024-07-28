@@ -104,6 +104,42 @@ jobs:
             - name: 24.GITHUB_REPOSITORY_OWNER_ID
               run: echo $GITHUB_REPOSITORY_OWNER_ID
 
+    GitHub-RunnerVariables:
+        runs-on: ubuntu-latest
+        defaults:
+          run:
+            working-directory: ./Scripts/Shell
 
+        steps:
+          - name: 25.GITHUB_RETENTION_DAYS
+            run: echo $GITHUB_RETENTION_DAYS
+
+          - name: 26.GITHUB_RUN_ATTEMPT
+            run: echo $GITHUB_RUN_ATTEMPT
+
+          - name: 27.GITHUB_RUN_ID
+            run: echo $GITHUB_RUN_ID
             
-    
+          - name: 28.GITHUB_RUN_NUMBER
+            run: echo $GITHUB_RUN_NUMBER
+
+          - name: 29.GITHUB_SERVER_URL
+            run: echo $GITHUB_SERVER_URL   
+ 
+          - name: 30.GITHUB_SHA
+            run: echo $GITHUB_SHA
+
+          - name: 31.GITHUB_STEP_SUMMARY
+            run: echo $GITHUB_STEP_SUMMARY   
+
+          - name: 32.GITHUB_TRIGERRING_ACTOR
+            run: echo $GITHUB_TRIGERRING_ACTOR
+
+          - name: 33.GITHUB_WORKFLOW
+            run: echo $GITHUB_WORKFLOW      
+
+          - name: 34.GITHUB_WORKFLOW_SHA
+            run: echo $GITHUB_WORKFLOW_SHA     
+
+          - name: 35.GITHUB_WORKSPACE
+            run: echo $GITHUB_WORKSPACE    
