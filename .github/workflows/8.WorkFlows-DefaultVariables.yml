@@ -104,7 +104,7 @@ jobs:
             - name: 24.GITHUB_REPOSITORY_OWNER_ID
               run: echo $GITHUB_REPOSITORY_OWNER_ID
 
-    GitHub-RunnerVariables:
+    GitHub-GenericVariables:
         runs-on: ubuntu-latest
         steps:
           - name: 25.GITHUB_RETENTION_DAYS
@@ -139,3 +139,43 @@ jobs:
 
           - name: 35.GITHUB_WORKSPACE
             run: echo $GITHUB_WORKSPACE    
+
+
+    GitHub-RunnerVariables:
+        runs-on: ubuntu-latest
+        steps:
+          - name: 36.RUNNER_ARCH
+            run: echo $RUNNER_ARCH
+
+          - name: 37.RUNNER_DEBUG
+            run: echo $RUNNER_DEBUG
+
+          - name: 38.RUNNER_ENVIRONMENT
+            run: echo $RUNNER_ENVIRONMENT
+            
+          - name: 39.RUNNER_NAME
+            run: echo $RUNNER_NAME
+
+          - name: 40.RUNNER_OS
+            run: echo $RUNNER_OS 
+ 
+          - name: 41.RUNNER_TEMP
+            run: echo $RUNNER_TEMP
+
+          - name: 42.RUNNER_TOOLCACHE
+            run: echo $RUNNER_TOOLCACHE
+
+          - name: 31.GITHUB_STEP_SUMMARY
+            run: echo $GITHUB_STEP_SUMMARY   
+
+          - name: 32.GITHUB_TRIGERRING_ACTOR
+            run: echo $GITHUB_TRIGERRING_ACTOR
+
+          - name: 33.GITHUB_WORKFLOW
+            run: echo $GITHUB_WORKFLOW      
+
+          - name: 34.GITHUB_WORKFLOW_SHA
+            run: echo $GITHUB_WORKFLOW_SHA     
+
+          - name: 35.GITHUB_WORKSPACE
+            run: echo $GITHUB_WORKSPACE   
