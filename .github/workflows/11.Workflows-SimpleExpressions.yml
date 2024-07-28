@@ -6,13 +6,17 @@ on:
 env:
   TestExpression1: "Expression1"
   TestExpression2: Expression2
+  TestExpression3: Expression3
 
 jobs:
   SimpleExpressions1:
     runs-on: ubuntu-latest
     steps:
-      - name: Expression1
+      - name: Print Expression1
         run: echo ${{ env.TestExpression1 }}
 
-      - name: Expression2
+      - name: Print Expression2
         run: echo $TestExpression2
+
+      - name: Print Expression3
+        run: echo $EXPRESSION3
