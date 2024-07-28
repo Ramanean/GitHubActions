@@ -33,7 +33,7 @@ jobs:
       HexExp: ${{ 0xffdd }}
       ExponentialExp: ${{ 2.e-2 }}
       StringExp: Kitten
-      StringBracesExp: ${{ "Cat is a good kitten" }}
+      StringBracesExp: 'Cat is a good kitten'
       
     steps:
       - name: Print Null Expression
