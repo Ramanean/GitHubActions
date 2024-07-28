@@ -17,4 +17,4 @@ jobs:
            run: echo $Test
    
          - name: Test Expression
-         - run: echo $TestExpression
+           run: echo $TestExpression
