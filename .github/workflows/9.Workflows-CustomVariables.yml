@@ -18,8 +18,11 @@ jobs:
          - name: Test Expression
            run: echo ${{ env.Test1 == env.Test2 && true || false }}
 
-         - name: Print Test2
-           run: echo ${{ env.Test2 }}
-           
          - name: Print Test1
            run: echo ${{ env.Test1 }}
+           
+         - name: Print Test2
+           run: echo ${{ env.Test2 }}
+
+         - name: Print Test3
+           run: echo ${{ env.Test3 }}
