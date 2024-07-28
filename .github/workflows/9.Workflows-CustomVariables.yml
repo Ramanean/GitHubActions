@@ -4,7 +4,10 @@ on:
    workflow_dispatch
 
 env:
-  a1: Shan
+  Test: Shan
+  Test1: Shan1
+  Test2: Shan2
+  TestExpression: ${{ if test1==test2; true }}
 
 jobs:
   CustomVariables1:
@@ -12,5 +15,8 @@ jobs:
       runs-on: ubuntu-latest
     
       steps:
-         - name: Test
-           run: echo $a1;
+         - name: Test Variable
+           run: echo $Test
+
+         - name: Test Expression
+         - run: echo $TestExpression
