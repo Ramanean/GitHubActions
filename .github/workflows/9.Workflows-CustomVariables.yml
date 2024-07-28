@@ -16,4 +16,4 @@ jobs:
            run: echo $Test
    
          - name: Test Expression
-           run: echo ${{ Test1 == Test2 && true || false }}
+           run: echo ${{ env.Test1 == env.Test2 && true || false }}
