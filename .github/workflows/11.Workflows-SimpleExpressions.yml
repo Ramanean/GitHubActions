@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Expression1
-        run: echo $${{ env.TestExpression1 }}
+        run: echo ${{ env.TestExpression1 }}
