@@ -32,7 +32,7 @@ jobs:
       FloatExp: ${{ 5.21 }}
       HexExp: ${{ 0xffdd }}
       ExponentialExp: ${{ 2.e-2 }}
-      StringExp: catkitten 
+      StringExp: Kitten
       StringBracesExp: ${{ "Cat is a good kitten" }}
       
     steps:
