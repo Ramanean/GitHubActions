@@ -25,7 +25,7 @@ jobs:
   SimpleExpressions2:
     runs-on: ubuntu-latest
     env:
-      Null1: ${{ null }}
+      NullExp1: ${{ null }}
     steps:
-      - name: Print Null
-        run: ${{ env.Null1 }}
+      - name: Print Null Expression
+        run: echo ${{ env.NullExp1 }}
