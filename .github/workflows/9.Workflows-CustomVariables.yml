@@ -7,7 +7,11 @@ env:
   Test: Shan
   Test1: Shan1
   Test2: Shan2
-
+  Test3: Shan3
+  TestOrgVar1: ${{ env.TEST1 }}
+  TestOrgVar2: ${{ env.TEST2 }}
+  TestOrgVar3: ${{ env.TEST3 }}
+  
 jobs:
    CustomVariables1:      
       runs-on: ubuntu-latest
@@ -26,3 +30,12 @@ jobs:
 
          - name: Print Test3
            run: echo $TEST3
+
+         - name: Print OrgVariable1
+           run: echo ${{ env.TestOrgVar1 }}
+           
+         - name: Print OrgVariable2
+           run: echo ${{ env.TestOrgVar2 }}
+
+         - name: Print OrgVariable3
+           run: echo ${{ env.TestOrgVar3 }}
