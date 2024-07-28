@@ -106,10 +106,6 @@ jobs:
 
     GitHub-RunnerVariables:
         runs-on: ubuntu-latest
-        defaults:
-          run:
-            working-directory: ./Scripts/Shell
-
         steps:
           - name: 25.GITHUB_RETENTION_DAYS
             run: echo $GITHUB_RETENTION_DAYS
