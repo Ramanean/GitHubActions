@@ -1,0 +1,14 @@
+name: 11.Workflows-SimpleExpressions
+
+on:
+  workflow_dispatch
+
+env:
+  TestExpression1: "Expression1"
+
+jobs:
+  SimpleExpressions1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Expression1
+        run: echo $${{ env.TestExpression1 }}
