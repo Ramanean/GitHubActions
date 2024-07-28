@@ -1,0 +1,13 @@
+name: 9.Workflows-CustomVariables
+
+on:
+   workflow_dispatch
+
+env:
+  a1="Shan"
+
+jobs:
+  CustomVariables1:
+    steps:
+      - name: 
+        run: echo $a1;
