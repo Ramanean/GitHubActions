@@ -7,7 +7,7 @@ env:
   Test: Shan
   Test1: Shan1
   Test2: Shan2
-  TestExpression: ${{ test1==test2 && true || false }}
+  TestExpression: ${{ Test1 == Test2 && true || false }}
 
 jobs:
    CustomVariables1:      
