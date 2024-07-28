@@ -8,9 +8,9 @@ env:
   Test1: Shan1
   Test2: Shan2
   Test3: Shan3
-  TestOrgVar1: ${{ var.TEST1 }}
-  TestOrgVar2: ${{ var.TEST2 }}
-  TestOrgVar3: ${{ var.TEST3 }}
+  TestOrgVar1: ${{ vars.TEST1 }}
+  TestOrgVar2: ${{ vars.TEST2 }}
+  TestOrgVar3: ${{ vars.TEST3 }}
   
 jobs:
    CustomVariables1:      
