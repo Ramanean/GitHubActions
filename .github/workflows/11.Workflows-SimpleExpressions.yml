@@ -19,4 +19,4 @@ jobs:
         run: echo $TestExpression2
 
       - name: Print Expression3
-        run: echo $EXPRESSION3
+        run: echo TESTEXPRESSION3
