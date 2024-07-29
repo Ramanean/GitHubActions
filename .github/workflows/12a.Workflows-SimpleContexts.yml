@@ -1,0 +1,11 @@
+name: 12a.Workflows-SimpleContexts
+
+on: workflow_dispatch
+
+jobs:
+ SimpleContexts1:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: Print Hello
+       run: echo "Hello"
