@@ -1,0 +1,45 @@
+name: 12.Workflows-ComplexExpressions
+
+on:
+  workflow_dispatch
+
+env:
+  TestExpression1: "Expression1"
+  TestExpression2: Expression2
+  TestExpression3: Expression3
+
+jobs:
+  ComplexExpressions1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Expression1
+        run: echo ${{ env.TestExpression1 }}
+
+      - name: Print Expression2
+        run: echo $TestExpression2
+
+      - name: Print Expression3
+        run: echo TESTEXPRESSION3
+
+
+  ComplexExpressions2:
+    runs-on: ubuntu-latest
+    env:
+      NullExp1: ${{ null }}
+      BooleanExpTrue: $${{ true }}
+      BooleanExpFalse: $${ false }}
+
+    steps:
+      - name: Print Null Expression
+        run: echo ${{ env.NullExp1 }}
+        
+      - name: Print Boolean True
+        run: echo ${{ env.BooleanExpTrue }}
+
+
+
+      - name: Print String Expression
+        run: echo ${{ env.StringExp }}
+
+      - name: Print String BracesExpression
+        run: echo ${{ env.StringBracesExp }}
