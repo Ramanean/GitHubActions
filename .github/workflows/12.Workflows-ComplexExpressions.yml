@@ -35,11 +35,3 @@ jobs:
         
       - name: Print Boolean True
         run: echo ${{ env.BooleanExpTrue }}
-
-
-
-      - name: Print String Expression
-        run: echo ${{ env.StringExp }}
-
-      - name: Print String BracesExpression
-        run: echo ${{ env.StringBracesExp }}
