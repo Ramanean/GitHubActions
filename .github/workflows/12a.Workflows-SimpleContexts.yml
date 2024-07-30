@@ -10,7 +10,7 @@ jobs:
      - name: Print Hello
        run: echo "Hello"
 
- GitHubContext:
+ GitHubAllContext:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,5 +18,14 @@ jobs:
        env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
        run: echo "$GITHUB_CONTEXT"
- 
+
+ GitHubContextIndividual:
+    runs-on: windows-latest
+
+    steps:
+     - name: GitHub Contexts
+       env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+       run: echo "$GITHUB_CONTEXT"
+
      
