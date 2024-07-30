@@ -1,0 +1,24 @@
+name: 12c.Workflows-ComplexContexts.yml
+
+on: 
+  workflow_dispatch:
+    inputs:
+          build_id:
+            required: true
+            type: string
+          deploy_target:
+            required: true
+            type: string
+          perform_deploy:
+            required: true
+            type: boolean
+
+  
+jobs:
+  InputContexts-Job:
+    runs-on: ubuntu-latest
+    if: ${{ inputs.perform_deploy }}
+    steps:
+     - name: Print Hello
+       run: echo "Hello"
+
