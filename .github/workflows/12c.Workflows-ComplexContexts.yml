@@ -3,7 +3,7 @@ name: 12c.Workflows-ComplexContexts.yml
 on: 
   workflow_dispatch:
     inputs:
-          build_id:
+          variable_check:
             required: true
             type: string
           deploy_target:
@@ -15,10 +15,19 @@ on:
 
   
 jobs:
-  InputContexts-Job:
+  InputContextsBoolean-Job:
     runs-on: ubuntu-latest
     if: ${{ inputs.perform_deploy }}
     steps:
      - name: Print Hello
-       run: echo "Hello"
-
+       run: echo "Input Context Boolean Check"
+       
+  InputContextsVariable-Check:
+    runs-on: ubuntu-latest
+    if: ${{ inputs.variablecheck == true }}
+    steps:
+     - name: Print Hello
+       run: echo "Input Variable Check"
+       
+     - name: Print the Variable
+       run: echo ${{ inputs.variable_check }}
