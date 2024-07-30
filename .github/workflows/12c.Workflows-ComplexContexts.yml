@@ -3,15 +3,18 @@ name: 12c.Workflows-ComplexContexts.yml
 on: 
   workflow_dispatch:
     inputs:
-          variable_check:
-            required: true
-            type: string
-          deploy_target:
-            required: true
-            type: string
-          perform_deploy:
-            required: true
-            type: boolean
+      variable_check:
+        required: true
+        type: string
+      variable1_check:
+        required: true
+        type: string
+      variable2_check:
+        required: true
+        type: string
+      perform_deploy:
+        required: true
+        type: boolean
 
   
 jobs:
@@ -31,3 +34,13 @@ jobs:
        
      - name: Print the Variable
        run: echo ${{ inputs.variable_check }}
+
+  InputContexts2Variables-Check:
+    runs-on: ubuntu-latest
+    if: ${{ inputs.variable1_check == 'true' && inputs.variable2_check == 'true' }}
+    steps:
+     - name: Print Hello
+       run: echo "Input Variable Check"
+       
+     - name: Print the Variable
+       run: echo ${{ inputs.variable2_check }}
