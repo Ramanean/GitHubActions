@@ -17,10 +17,9 @@ jobs:
      - name: GitHub Contexts
        env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
-       run: echo "$GITHUB_CONTEXT
-       
+       run: echo "$GITHUB_CONTEXT"       
 
-  GitHubJobContext:
+ GitHubJobContext:
     runs-on: ubuntu-latest
 
     steps:
