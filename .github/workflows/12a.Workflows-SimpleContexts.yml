@@ -23,12 +23,13 @@ jobs:
     runs-on: windows-latest
 
     steps:
-     - name: GitHub Contexts
-       env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-       run: echo "$GITHUB_CONTEXT"
+      - name: GitHub Contexts
+        env:
+            GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
 
-     - name: GitHubJob
-       run: echo ${{github.job}}
+      - name: GitHubJob
+        run: echo ${{github.job}}
 
-     
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
