@@ -24,7 +24,7 @@ jobs:
        
   InputContextsVariable-Check:
     runs-on: ubuntu-latest
-    if: ${{ inputs.variable_check == true }}
+    if: ${{ inputs.variable_check == "true" }}
     steps:
      - name: Print Hello
        run: echo "Input Variable Check"
