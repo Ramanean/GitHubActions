@@ -1,4 +1,4 @@
-name: 12a.Workflows-SimpleContexts
+name: 12b.Workflows-JobContexts
 
 on: workflow_dispatch
 
@@ -19,7 +19,7 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
        run: echo "$GITHUB_CONTEXT
        
-       
+
   GitHubJobContext:
     runs-on: ubuntu-latest
 
