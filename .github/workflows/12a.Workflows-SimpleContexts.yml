@@ -70,6 +70,7 @@ jobs:
 
  GitHubEventsIndividual:
     runs-on: ubuntu-latest
+    steps:
       - name: GitHubEvents
         run: echo ${{github.event.inputs}}    
 
