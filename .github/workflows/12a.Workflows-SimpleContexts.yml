@@ -33,3 +33,432 @@ jobs:
 
       - name: GitHubSHA
         run: echo ${{github.sha}}    
+
+      - name: GitHubRepository
+        run: echo ${{github.repository}}    
+
+      - name: GitHubrepository_owner
+        run: echo ${{github.repository_owner}}    
+
+      - name: GitHubrepository_owner_id
+        run: echo ${{github.repository_owner_id}}    
+
+      - name: GitHubrepositoryUrl
+        run: echo ${{github.repositoryUrl}}    
+
+      - name: GitHubrun_id
+        run: echo ${{github.run_id}}    
+
+      - name: GitHubrun_number
+        run: echo ${{github.run_number}}    
+
+      - name: GitHubretention_days
+        run: echo ${{github.retention_days}}    
+
+      - name: GitHubrun_attempt
+        run: echo ${{github.run_attempt}}    
+
+      - name: GitHubartifact_cache_size_limit
+        run: echo ${{github.artifact_cache_size_limit}}   
+
+      - name: GitHubrepository_visibility
+        run: echo ${{github.repository_visibility}}    
+
+      - name: GitHubrepo-self-hosted-runners-disabled
+        run: echo ${{github.repo-self-hosted-runners-disabled}}    
+
+
+ GitHubEventsIndividual:
+    runs-on: ubuntu-latest
+      - name: GitHubEvents
+        run: echo ${{github.event.inputs}}    
+
+      - name: GitHubrepository
+        run: echo ${{github.event.repository.allow_forking}}    
+
+      - name: GitHubarchive_url
+        run: echo ${{github.event.repository.archive_url}}   
+      
+      - name: GitHubarchived
+        run: echo ${{github.event.repository.archived}}    
+
+      - name: GitHubassignees_url
+        run: echo ${{github.event.repository.assignees_url}}    
+
+      - name: GitHubblobs_url
+        run: echo ${{github.event.repository.blobs_url}}   
+      
+      - name: GitHubbranches_url
+        run: echo ${{github.event.repository.branches_url}}    
+
+      - name: GitHubclone_url
+        run: echo ${{github.event.repository.clone_url}}    
+
+      - name: GitHubcollaborators_url
+        run: echo ${{github.event.repository.collaborators_url}}   
+      
+      - name: GitHubcomments_url
+        run: echo ${{github.event.repository.comments_url}}
+
+      - name: GitHubrepository
+        run: echo ${{github.event.repository.allow_forking}}    
+
+      - name: GitHubrepository
+        run: echo ${{github.event.repository.allow_forking}}   
+      
+      - name: GitHubrepository
+        run: echo ${{github.event.repository.allow_forking}}    
+
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}   
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+        
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
+      - name: GitHubSHA
+        run: echo ${{github.sha}}    
+
