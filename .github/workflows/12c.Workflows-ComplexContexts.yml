@@ -19,14 +19,14 @@ on:
   
 jobs:
   InputContextsBoolean-Job:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     if: ${{ inputs.perform_deploy }}
     steps:
      - name: Print Hello
        run: echo "Input Context Boolean Check"
        
   InputContextsVariable-Check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     if: ${{ inputs.variable_check == 'true' }}
     steps:
      - name: Print Hello
