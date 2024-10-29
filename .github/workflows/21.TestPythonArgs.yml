@@ -23,5 +23,5 @@ jobs:
 
 
       - name: Python Passing arguments
-        run: python test1.py ${{test1}} ${{test2}}
+        run: python test1.py ${test1} ${test2}
             
