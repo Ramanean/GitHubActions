@@ -5,8 +5,8 @@ on:
   workflow_dispatch
 
 env:
-  test1: Test1
-  test2: Test2
+  test1: Shan
+  test2: Ganesh
   
 jobs:
   PythonTest:
