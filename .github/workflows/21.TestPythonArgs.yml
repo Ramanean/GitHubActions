@@ -5,7 +5,7 @@ on:
   workflow_dispatch
 
 env:
-  test1: Shan
+  test1: 2024-01-01
   test2: Ganesh
   
 jobs:
