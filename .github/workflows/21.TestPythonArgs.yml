@@ -5,7 +5,7 @@ on:
   workflow_dispatch
   
 jobs:
-  job:
+  PythonTest:
     runs-on: ubuntu-latest
     defaults:
       run:
