@@ -3,6 +3,10 @@ name: 21.TestPythonArgs
 
 on:
   workflow_dispatch
+
+env:
+  test1: Test1
+  test2: Test2
   
 jobs:
   PythonTest:
@@ -19,5 +23,5 @@ jobs:
 
 
       - name: Python Passing arguments
-        run: python test1.py "Shan" "Ganesh"
+        run: python test1.py ${{test1}} ${{test2}}
             
