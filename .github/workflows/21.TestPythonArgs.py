@@ -1,5 +1,5 @@
 
-name: SimpleWorkflow
+name: TestPythonArgs
 
 on:
   workflow_dispatch
@@ -16,6 +16,6 @@ jobs:
           repository: ${{ github.repository }}
 
 
-      - name: Shell Execution
+      - name: Python Passing arguments
         run: python test1.py "Shan" "Ganesh"
             
