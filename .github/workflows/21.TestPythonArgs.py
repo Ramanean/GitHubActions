@@ -17,5 +17,5 @@ jobs:
 
 
       - name: Shell Execution
-        run: "echo Shan"
+        run: python test1.py "Shan" "Ganesh"
             
